@@ -7,9 +7,7 @@ const Jsx_Expression = () => {
   const email = 'sundari@gmail.com'
   return (
     <div>
-      <h1>Hello {name}</h1>
-      <h2>Age: {age}</h2>
-      <h2>Email: {email}</h2>
+      <h1>Hello {name}, your age is {age} and your email is {email}</h1>
     </div>
   )
 }
