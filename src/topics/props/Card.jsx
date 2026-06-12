@@ -7,9 +7,9 @@ const Card = ({users}) => {
     <div className='relative top-5'>
       <div className='flex items-center flex-wrap justify-center gap-10'>
         {
-          users.map((user, idx) => {
+          users.map((user, i) => {
             return(
-              <div key={idx} className='w-95 h-100 bg-gray-300 rounded-2xl flex items-center justify-center flex-wrap'>
+              <div key={i} className='w-95 h-100 bg-gray-300 rounded-2xl flex items-center justify-center flex-wrap'>
                 <div className='w-[95%] h-[30%] overflow-hidde rounded-2xl bg-linear-to-tr from-amber-200 via-green-200 to-blue-200'>
                   <img src={user.image} className='overflow-hidden w-25 h-25 object-cover rounded-full relative top-18 left-5' alt={user.name} />
                 </div>
