@@ -1,12 +1,13 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 import Parent from './Parent';
+import PropsTask from './PropsTask';
 
 const Props_home = () => {
-  console.log("props home file")
   return (
     <div>
-      <Parent/>
+      {/* <Parent/> */}
+      <PropsTask/>
     </div>
   )
 }

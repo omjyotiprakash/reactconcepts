@@ -3,9 +3,12 @@ import React from 'react'
 import Child from './Child';
 
 const Parent = () => {
-  console.log("parent file")
+  const data = ["sundari", "sheela", "leela"]
   return (
     <div>
+      <Child name="sundari" />
+      <Child name="sheela" />
+      <Child name="leela" />
       <Child/>
     </div>
   )
