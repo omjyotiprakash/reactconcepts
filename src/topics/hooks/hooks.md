@@ -14,3 +14,6 @@ There are 2 types of hooks are there in React js.
 # 1. Predefined Hooks.
  
 1. useState()
+   a) It's used to manage the state inside the component. It helps to store the data and update the data dynamically.
+   b) This Hook always returns an array having 2 values.
+      i) First Value is initial value and the second value is a function to update the initial value.
