@@ -8,14 +8,14 @@ const UseStateHook = () => {
   const addition = () => {
     setCount(count + 1)
   }
-  const substarction = () => {
+  const subtraction = () => {
     setCount(count - 1)
   }
   return (
     <div>
       <h1 className='text-9xl'>{count}</h1>
       <button onClick={addition} className='border-2 text-xl'>Add 1</button>
-      <button onClick={substarction} className='border-2 text-xl'>Sub 1</button>
+      <button onClick={subtraction} className='border-2 text-xl'>Sub 1</button>
     </div>
   )
 }
