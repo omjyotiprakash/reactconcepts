@@ -7,6 +7,7 @@ import React from 'react'
 import UseStateHook from './topics/hooks/UseStateHook';
 import ListAndKeys from './topics/listandkeys/ListAndKeys';
 import UncontrolledForm from './topics/uncontrolledform/UncontrolledForm';
+import ControlledForm from './topics/controlledform/ControlledForm';
 // import Jsx_Expression from './topics/jsx_expression/Jsx_Expression';
 // import Jsx_Rules from './topics/jsx_expression/Jsx_Rules';
 
@@ -21,7 +22,8 @@ const App = () => {
       {/* <Fragments_Concept/> */}
       {/* <UseStateHook/> */}
       {/* <ListAndKeys/> */}
-      <UncontrolledForm/>
+      {/* <UncontrolledForm/> */}
+      <ControlledForm/>
     </div>
   )
 }
