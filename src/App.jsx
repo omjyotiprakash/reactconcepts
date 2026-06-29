@@ -8,6 +8,7 @@ import UseStateHook from './topics/hooks/UseStateHook';
 import ListAndKeys from './topics/listandkeys/ListAndKeys';
 import UncontrolledForm from './topics/uncontrolledform/UncontrolledForm';
 import ControlledForm from './topics/controlledform/ControlledForm';
+import RadioAndCheckbox from './topics/controlledform/RadioAndCheckbox';
 // import Jsx_Expression from './topics/jsx_expression/Jsx_Expression';
 // import Jsx_Rules from './topics/jsx_expression/Jsx_Rules';
 
@@ -23,7 +24,8 @@ const App = () => {
       {/* <UseStateHook/> */}
       {/* <ListAndKeys/> */}
       {/* <UncontrolledForm/> */}
-      <ControlledForm/>
+      {/* <ControlledForm/> */}
+      <RadioAndCheckbox/>
     </div>
   )
 }

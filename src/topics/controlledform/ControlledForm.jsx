@@ -3,7 +3,9 @@ import React, { useState } from 'react'
 const ControlledForm = () => {
   const [form, setForm] = useState({
     username:"",
-    password:""
+    password:"",
+    gender:"",
+    date: ""
   })
 
   const handleForm = (e) => {
@@ -21,7 +23,14 @@ const ControlledForm = () => {
       <form onSubmit={handleForm} className='flex flex-col'>
         <input type="text" placeholder='username' name='username' onChange={handleInput}  className='border-2 p-2'/>
         <input type="password" placeholder='password' name='password' onChange={handleInput}  className='border-2 p-2'/>
-        <button>Submit</button>
+        <select name="education" onChange={handleInput} className='border-2'>
+          <option value="">Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Others">Others</option>
+        </select>
+        <input type="date" name='date' onChange={handleInput} className='border-2' />
+        <button className='border-none relative top-5 rounded-3xl bg-blue-600 text-white'>Submit</button>
       </form>
     </div>
   )
