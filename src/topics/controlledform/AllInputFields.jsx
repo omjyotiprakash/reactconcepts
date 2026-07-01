@@ -7,7 +7,7 @@ const AllInputFields = () => {
     email: "",
     password: "",
     gender: "",
-    skills: ["HTML"],
+    skills: [],
     college: "",
     yop: "",
     dob: "",
@@ -23,9 +23,18 @@ const AllInputFields = () => {
     console.log(form)
   }
 
-  const handleChange = (e) => {
-    const { name, value } = e.target
-    setForm({ ...form, [name]: value })
+  const handleInput = (e) => {
+    const {name, value} = e.target
+    setForm({...form, [name]:value})
+  }
+
+  const handleCheckbox = (e) => {
+    if(e.target.checked){
+      setForm({...form, skills:[...skills, e.target.value]})
+    }
+    else{
+      setForm({...form, skills:skills.filter((ele) => ele !== e.target.value)})
+    }
   }
 
 
@@ -33,14 +42,14 @@ const AllInputFields = () => {
   return (
     <div className="w-screen h-screen flex items-center justify-center">
       <form className="flex items-center flex-col gap-2" onSubmit={handleForm}>
-        <input className="border" type="text" name="username" placeholder="username" value={username} onChange={handleChange} />
-        <input className="border" type="number" name="age" placeholder="age" value={age} onChange={handleChange} />
-        <input className="border" type="email" name="email" placeholder="email" value={email} onChange={handleChange} />
-        <input className="border" type="password" name="password" placeholder="password" value={password} onChange={handleChange} />
+        <input className="border" type="text" name="username" placeholder="username" value={username} onChange={handleInput} />
+        <input className="border" type="number" name="age" placeholder="age" value={age} onChange={handleInput} />
+        <input className="border" type="email" name="email" placeholder="email" value={email} onChange={handleInput} />
+        <input className="border" type="password" name="password" placeholder="password" value={password} onChange={handleInput} />
 
         <div>
           <label htmlFor="gender">Gender:</label>
-          <select id="gender" name="gender" className="border" value={gender} onChange={handleChange}>
+          <select id="gender" name="gender" className="border" value={gender} onChange={handleInput}>
             <option value="">Select</option>
             <option value="Male">Male</option>
             <option value="Female">Female</option>
@@ -52,15 +61,15 @@ const AllInputFields = () => {
             allSkills.map((ele) => {
               return (
                 <label key={ele}>
-                  <input type="checkbox" value={ele} checked={skills.includes(ele)}/>{ele}</label>
+                  <input type="checkbox" value={ele} checked={skills.includes(ele)} onChange={handleCheckbox}/>{ele}</label>
               )
             })
           }
         </div>
-        <input className="border" type="text" name="college" placeholder="college" value={college} onChange={handleChange} />
-        <input className="border" type="number" name="yop" placeholder="year of passing" value={yop} onChange={handleChange} />
-        <input className="border" type="date" name="dob" value={dob} onChange={handleChange} />
-        <input className="border" type="text" name="profile" placeholder="profile url" value={profile} onChange={handleChange} />
+        <input className="border" type="text" name="college" placeholder="college" value={college} onChange={handleInput} />
+        <input className="border" type="number" name="yop" placeholder="year of passing" value={yop} onChange={handleInput} />
+        <input className="border" type="date" name="dob" value={dob} onChange={handleInput} />
+        <input className="border" type="text" name="profile" placeholder="profile url" value={profile} onChange={handleInput} />
         <button type="submit" className="border">submit</button>
       </form>
     </div>
