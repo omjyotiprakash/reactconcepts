@@ -7,7 +7,7 @@ const AllInputFields = () => {
     email: "",
     password: "",
     gender: "",
-    skills: [],
+    skills: ["HTML"],
     college: "",
     yop: "",
     dob: "",
