@@ -12,6 +12,7 @@ import Radio from './topics/controlledform/Radio';
 import Checkbox from './topics/controlledform/Checkbox';
 import MultipleCheckbox from './topics/controlledform/MultipleCheckbox';
 import AllInputFields from './topics/controlledform/AllInputFields';
+import Routing from './topics/routing/Routing';
 // import Jsx_Expression from './topics/jsx_expression/Jsx_Expression';
 // import Jsx_Rules from './topics/jsx_expression/Jsx_Rules';
 
@@ -31,7 +32,8 @@ const App = () => {
       {/* <Radio/> */}
       {/* <Checkbox/> */}
       {/* <MultipleCheckbox/> */}
-      <AllInputFields/>
+      {/* <AllInputFields/> */}
+      <Routing/>
     </div>
   )
 }

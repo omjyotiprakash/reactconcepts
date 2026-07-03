@@ -37,7 +37,9 @@ const AllInputFields = () => {
     }
   }
 
-
+  const handleFile = (e) => {
+    setForm({...form, profile:e.target.files[0]})
+  }
 
   return (
     <div className="w-screen h-screen flex items-center justify-center">
@@ -69,8 +71,8 @@ const AllInputFields = () => {
         <input className="border" type="text" name="college" placeholder="college" value={college} onChange={handleInput} />
         <input className="border" type="number" name="yop" placeholder="year of passing" value={yop} onChange={handleInput} />
         <input className="border" type="date" name="dob" value={dob} onChange={handleInput} />
-        <input className="border" type="text" name="profile" placeholder="profile url" value={profile} onChange={handleInput} />
-        <button type="submit" className="border">submit</button>
+        <input className="border" type="file" name="profile" placeholder="profile url" value={profile} onChange={handleInput} />
+        <button type="submit" className="border" onChange={handleFile}>submit</button>
       </form>
     </div>
   )
