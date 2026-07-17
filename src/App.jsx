@@ -14,6 +14,7 @@ import MultipleCheckbox from './topics/controlledform/MultipleCheckbox';
 import AllInputFields from './topics/controlledform/AllInputFields';
 import Routing from './topics/routing/Routing';
 import ReactMemo from './topics/optimization/ReactMemo';
+import UseMemoHook from './topics/hooks/UseMemoHook';
 // import Jsx_Expression from './topics/jsx_expression/Jsx_Expression';
 // import Jsx_Rules from './topics/jsx_expression/Jsx_Rules';
 
@@ -35,7 +36,8 @@ const App = () => {
       {/* <MultipleCheckbox/> */}
       {/* <AllInputFields/> */}
       {/* <Routing/> */}
-      <ReactMemo/>
+      {/* <ReactMemo/> */}
+      <UseMemoHook/>
     </div>
   )
 }

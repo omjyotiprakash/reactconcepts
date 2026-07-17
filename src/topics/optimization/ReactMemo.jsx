@@ -1,8 +1,13 @@
+import Child from "./Child";
+import Parent from "./Parent";
 
 const ReactMemo = () => {
   return (
     <div>
-      ReactMemo
+      <Parent/>
+      
+      <hr />
+      <Child/>
     </div>
   )
 }
