@@ -18,6 +18,7 @@ import UseMemoHook from './topics/hooks/UseMemoHook';
 import UseCallbackHook from './topics/hooks/usecallbackhook/UseCallbackHook';
 import CustomHooks from './topics/hooks/customhooks/CustomHooks';
 import UseReducerHook from './topics/usereducerhook/UseReducerHook';
+import ReduxToolKitConcept from './topics/reduxtoolkitconcept/ReduxToolKitConcept';
 // import Jsx_Expression from './topics/jsx_expression/Jsx_Expression';
 // import Jsx_Rules from './topics/jsx_expression/Jsx_Rules';
 
@@ -43,7 +44,8 @@ const App = () => {
       {/* <UseMemoHook/> */}
       {/* <UseCallbackHook/> */}
       {/* <CustomHooks/> */}
-      <UseReducerHook/>
+      {/* <UseReducerHook/> */}
+      <ReduxToolKitConcept/>
     </div>
   )
 }
